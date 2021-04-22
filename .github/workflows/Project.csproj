@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>TestProject</AssemblyName>
+    <RootNamespace>TestProject</RootNamespace>
+
+    <Copyright>Copyright© ASNA Inc. 2021. All rights reserved.</Copyright>
+    <Version>1.2.3</Version>
+    <NoWarn>$(NoWarn);NU5105</NoWarn>
+    <Description>Another great library.</Description>
+    <Author>ASNA</Author>
+    <Company>ASNA</Company>
+
+  </PropertyGroup>
+
+</Project>
