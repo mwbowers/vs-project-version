@@ -3,14 +3,14 @@ const os = require('os');
 
 function run()
 {
-    aip = process.env.AI_PATH || process.env.INPUT_AI_PATH;    
-    if (!fs.existsSync(aip))
+    projPath = process.env.PROJ_PATH || process.env.INPUT_PROJ_PATH;    
+    if (!fs.existsSync(projPath))
         throw new Error('Project file not found');
 
-    console.log(`Project File Path: ${aip}`)
+    console.log(`Project File Path: ${projPath}`)
 
     rgx = new RegExp('<Version>(.*)<\\/Version>', 'm');
-    ver = rgx.exec(fs.readFileSync(aip, { encoding: 'utf-8' }))[1];
+    ver = rgx.exec(fs.readFileSync(projPath, { encoding: 'utf-8' }))[1];
 
     if (!ver)
         throw new Error('Failed to get Version');
