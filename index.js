@@ -26,8 +26,8 @@ function run()
     
     if (vp > 0 && vp < 4){
         var verSplit = ver.split('.');
-		while (versplit.length < vp)
-			verSplit.push(0);
+        while (verSplit.length < vp)
+            verSplit.push(0);
         verSplit = verSplit.slice(0, vp);
         ver = verSplit.join('.');
     }
