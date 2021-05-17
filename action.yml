@@ -3,7 +3,7 @@ author: Matt Bowers based on Jason Davis' AssemblyInfo Version
 description: Get the version from Visual Studio project files 
 
 inputs:
-    AI_PATH:
+    PROJ_PATH:
         description: Filepath of the project file, relative to root of repository
         required: true
     VER_PLACES :
