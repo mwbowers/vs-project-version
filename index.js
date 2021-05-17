@@ -9,7 +9,7 @@ function run()
 
     console.log(`Project File Path: ${projPath}`)
 
-    rgx = new RegExp('<Version>(.*)<\\/Version>', 'm');
+    rgx = new RegExp('<Version.*>(.*)<\\/Version>', 'm');
     ver = rgx.exec(fs.readFileSync(projPath, { encoding: 'utf-8' }))[1];
 
     if (!ver)
